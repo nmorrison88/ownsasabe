@@ -122,29 +122,6 @@
 
 
 /* Version 1.1 final polish */
-.hero{
-  height:auto!important;
-  min-height:0!important;
-  display:block!important;
-  padding:104px 42px 42px!important;
-  background:var(--cream)!important;
-  text-align:center!important;
-  overflow:visible!important;
-}
-.hero img{
-  position:relative!important;
-  inset:auto!important;
-  width:100%!important;
-  max-width:1366px!important;
-  height:auto!important;
-  max-height:calc(100vh - 150px)!important;
-  object-fit:contain!important;
-  margin:0 auto!important;
-  border-radius:6px!important;
-  box-shadow:0 18px 46px rgba(0,0,0,.24)!important;
-}
-.hero::after{display:none!important;}
-
 #snapshot .divider{display:none!important;}
 
 /* Property highlights: photos only, no baked icon area */
@@ -177,8 +154,6 @@
 }
 
 @media(max-width:900px){
-  .hero{padding:86px 18px 28px!important;}
-  .hero img{max-height:none!important;border-radius:4px!important;}
   #vision .tall-image{width:100%!important;border-width:10px!important;}
   .highlight-grid img{height:210px!important;}
 }
