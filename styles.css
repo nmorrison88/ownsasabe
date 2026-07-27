@@ -309,3 +309,8 @@ h3{font-size:22px;letter-spacing:.02em;}
 /* ===== FINAL FIX: restore grid display for split sections (was being overridden by the full-height flex rule) ===== */
 .split{display:grid!important;}
 .split-snapshot{display:flex!important;}
+
+/* ===== Fix: text overflowing its grid column and disappearing behind the photo ===== */
+.split > div{min-width:0;}
+.check-grid{grid-template-columns:1fr 1fr;}
+.check-grid li{min-width:0;overflow-wrap:break-word;}
