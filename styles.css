@@ -305,3 +305,7 @@ h3{font-size:22px;letter-spacing:.02em;}
 .highlight-grid p{font-size:12px!important;padding:0 10px!important;}
 #highlights .section-title{margin-bottom:12px!important;}
 #highlights .section-title p.section-subtitle{margin-bottom:0!important;}
+
+/* ===== FINAL FIX: restore grid display for split sections (was being overridden by the full-height flex rule) ===== */
+.split{display:grid!important;}
+.split-snapshot{display:flex!important;}
