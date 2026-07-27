@@ -296,3 +296,12 @@ h2{font-size:clamp(40px,5.5vw,64px)!important;font-weight:600;letter-spacing:.03
 }
 .two-list li,.check-grid li{font-size:18px!important;}
 h3{font-size:22px;letter-spacing:.02em;}
+
+/* ===== FINAL Highlights sizing fix (overrides earlier conflicting rules) ===== */
+.highlight-grid img{height:120px!important;margin-bottom:8px!important;}
+.highlight-grid{gap:14px!important;}
+.highlight-grid article{padding:0 0 10px!important;}
+.highlight-grid h3{font-size:15px!important;margin-bottom:3px!important;}
+.highlight-grid p{font-size:12px!important;padding:0 10px!important;}
+#highlights .section-title{margin-bottom:12px!important;}
+#highlights .section-title p.section-subtitle{margin-bottom:0!important;}
