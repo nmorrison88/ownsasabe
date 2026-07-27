@@ -11,20 +11,22 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    
-    <button class="nav-toggle" aria-label="Open menu">☰</button>
-    <nav class="site-nav">
-      <a href="#history">History</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#snapshot">Snapshot</a>
-      <a href="#vision">Vision</a>
-      <a href="#video">Video</a>
-      <a href="#parcels">Parcels</a>
-      <a href="#location">Location</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+  <label class="hamburger-btn" for="nav-toggle"><span class="bar"></span></label>
+  <div class="nav-overlay">
+    <span class="brand-tag">Own Sasabe</span>
+    <a href="#top">Home</a>
+    <a href="#history">History</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#snapshot">Snapshot</a>
+    <a href="#vision">Vision</a>
+    <a href="#video">Video</a>
+    <a href="#parcels">Parcels</a>
+    <a href="#location">Location</a>
+    <a href="#info">Disclosures</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a id="top"></a>
 
   <main>
     <section class="hero section-dark">
@@ -61,39 +63,39 @@
       </div>
     </section>
 
-    <section id="snapshot" class="snapshot cream">
-      <img class="wide-image" src="assets/images/drone-panorama.png" alt="Aerial panorama of Sasabe property land" />
+    <section id="snapshot" class="snapshot cream split-snapshot">
       <div class="section inner reveal">
-        <div class="section-title">
+        <div class="section-title align-left">
           <h2>Property Snapshot</h2>
-          <p class="section-subtitle">A quick overview of the property</p>
+          <p class="section-subtitle align-left">A quick overview of the property</p>
         </div>
-        <ul class="two-list">
-          <li>Approximately 453 Acres · Three Parcels</li>
-          <li>Offered at $3,500,000</li>
+        <ul class="two-list one-col">
+          <li>U.S.–Mexico Port of Entry</li>
+          <li>Offered at $5,000,000</li>
           <li>Historic Sasabe Store</li>
           <li>United States Post Office</li>
           <li>Residential (RH) Zoning</li>
-          <li>Renovation & Redevelopment Opportunity</li>
+          <li>Baboquivari Mountain Views</li>
           <li>Private Well</li>
           <li>State Route 286 Frontage</li>
-          <li>U.S.–Mexico Port of Entry</li>
-          <li>Baboquivari Mountain Views</li>
+          <li>Approximately 453 Acres · Three Parcels</li>
+          <li>Renovation & Redevelopment Opportunity</li>
         </ul>
       </div>
+      <img class="framed-image snapshot-photo" src="assets/images/snapshot-mountain.jpg" alt="Baboquivari Mountain sunset" />
     </section>
 
-    <section id="vision" class="section cream split reverse reveal">
+    <section id="vision" class="section cream split reveal">
       <div>
         <h2>Imagine Owning Your Own Town</h2>
         <p class="italic">A rare opportunity to shape its next chapter.</p>
         <h3>What could your vision become?</h3>
-        <ul class="check-grid">
-          <li>Legacy Family Ranch</li><li>Agriculture or Ranching Operation</li><li>Historic Preservation Project</li><li>Conservation & Stewardship</li><li>Private Retreat</li><li>Long-Term Land Investment</li><li>Boutique Hospitality Destination</li><li>One-of-a-Kind Southwest Landmark</li><li>Film & Photography Location</li><li>Artist or Creative Community</li>
+        <ul class="check-grid one-col">
+          <li>Legacy Family Ranch</li><li>Historic Preservation Project</li><li>Private Retreat</li><li>Boutique Hospitality Destination</li><li>Film & Photography Location</li><li>Agriculture or Ranching Operation</li><li>Conservation & Stewardship</li><li>Long-Term Land Investment</li><li>One-of-a-Kind Southwest Landmark</li><li>Artist or Creative Community</li>
         </ul>
         <p class="fineprint">The property's unique character invites buyers to imagine a wide range of future possibilities. Any future use or development remains subject to buyer due diligence, applicable zoning, and governmental approvals.</p>
       </div>
-      <img class="tall-image" src="assets/images/vision-mountain.png" alt="Baboquivari Mountain sunset scene" />
+      <img class="tall-image" src="assets/images/vision-nathan.jpg" alt="Nathan Morrison looking out at Baboquivari Mountain sunset" />
     </section>
 
     <section id="video" class="section dark video-section">
@@ -134,7 +136,7 @@
     </section>
 
     <section id="info" class="section cream disclosures reveal">
-      <div class="section-title"><h2>Important Information</h2><p class="section-subtitle">Property Disclosures & General Information</p></div>
+      <div class="section-title align-left"><h2>Important Information</h2></div>
       <div class="disclosure-layout">
         <div class="disclosure-cards">
           <article><h3>Marketing Materials</h3><p>Some images on this website have been digitally enhanced or created using artificial intelligence for illustrative and marketing purposes. These images are intended to convey the character and atmosphere of the property and should not be interpreted as representations of current conditions.</p></article>
@@ -151,7 +153,7 @@
       <p class="fineprint center">All information deemed reliable but not guaranteed. Buyers should independently verify all information.</p>
     </section>
 
-    <section id="contact" class="contact section cream split reverse reveal">
+    <section id="contact" class="contact section cream split reveal">
       <div>
         <h2>Interested in Learning More?</h2>
         <p>Whether you are an investor, developer, or preservationist, I’d be happy to answer your questions and provide additional information about this extraordinary opportunity.</p>
@@ -159,14 +161,13 @@
           <h3>Nathan Morrison</h3>
           <p class="subtitle">Realtor, Indie Realty</p>
         </div>
-        <div class="button-stack">
-          <a class="btn" href="tel:15204610058">Call Nathan</a>
-          <a class="btn" href="mailto:nate@indie-realty.com?subject=Own Sasabe Inquiry">Email Nathan</a>
-          <a class="btn" href="https://realestatewithnateaz.com" target="_blank" rel="noopener">Visit Real Estate With Nate</a>
-          <button class="btn" id="shareBtn">Share This Property</button>
-        </div>
+        <ul class="contact-icon-list">
+          <li><span class="icon">&#9742;</span><a href="tel:15204610058">520.461.0058</a></li>
+          <li><span class="icon">&#9993;</span><a href="mailto:nate@indie-realty.com?subject=Own Sasabe Inquiry">nate@indie-realty.com</a></li>
+          <li><span class="icon">&#127760;</span><a href="https://nathanmorrison.indie-realty.com" target="_blank" rel="noopener">nathanmorrison.indie-realty.com</a></li>
+        </ul>
       </div>
-      <img class="tall-image" src="assets/images/contact-286.png" alt="Nathan Morrison near State Route 286 sign" />
+      <img class="tall-image contact-photo" src="assets/images/contact-286-new.jpg" alt="Nathan Morrison at the State Route 286 sign at sunset" />
     </section>
   </main>
 
