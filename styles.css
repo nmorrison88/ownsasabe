@@ -356,10 +356,10 @@ h2{margin:0 0 16px!important;}
 }
 
 /* ===== FINAL FIX: show the entire hero photo (logo + all text), no cropping, no cream box ===== */
-.hero{background:#0c0b09!important;}
+.hero{background:var(--cream)!important;}
 .hero img{
   object-fit:contain!important;
-  background:#0c0b09!important;
+  background:var(--cream)!important;
 }
 
 /* Since the full hero image (including its logo) now always shows in full, the separate logo overlay is redundant — hide it */
