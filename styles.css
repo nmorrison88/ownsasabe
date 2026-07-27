@@ -314,3 +314,16 @@ h3{font-size:22px;letter-spacing:.02em;}
 .split > div{min-width:0;}
 .check-grid{grid-template-columns:1fr 1fr;}
 .check-grid li{min-width:0;overflow-wrap:break-word;}
+
+/* ===== FINAL FIX: Vision checklist actually single-column (grid property, not multicol) ===== */
+.check-grid.one-col{grid-template-columns:1fr!important;columns:auto;max-width:520px;}
+
+/* ===== FINAL FIX: Contact photo shows in full, matching its real portrait shape ===== */
+.contact-photo{
+  height:auto!important;
+  max-height:62vh;
+  width:auto;
+  max-width:100%;
+  margin:0 auto;
+  object-fit:contain!important;
+}
