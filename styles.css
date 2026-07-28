@@ -476,3 +476,21 @@ html{scroll-behavior:auto!important;}
 .snapshot-photo{
   margin-top:8px!important;
 }
+
+/* ===== FINAL FIX: Snapshot mobile stacking — .split-snapshot never got the single-column
+   mobile treatment that .split (Vision/Contact) automatically gets, so it was still trying
+   to force 2 columns on phone screens, squeezing everything and pushing the heading down ===== */
+@media(max-width:900px){
+  .split-snapshot{
+    grid-template-columns:1fr!important;
+    padding:64px 18px 30px!important;
+  }
+  .snapshot-photo{margin-top:20px!important;}
+}
+
+/* ===== FINAL FIX: Snapshot text block raised to align with the top of the photo on desktop ===== */
+.split-snapshot .section.inner{
+  align-self:start!important;
+  padding-top:0!important;
+  margin-top:0!important;
+}
