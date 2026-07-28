@@ -398,3 +398,22 @@ h2{margin:0 0 16px!important;}
   .map-frame iframe{height:640px!important;}
   .map-frame{max-width:900px!important;}
 }
+
+/* ===== FINAL FIX: scroll-jump bug — global smooth-scroll was conflicting with the reveal
+   animations and causing the page to jerk/jump unexpectedly during normal scrolling.
+   Turn off global smooth-scroll; menu navigation gets its own smooth scroll via JS instead. ===== */
+html{scroll-behavior:auto!important;}
+
+/* ===== FINAL FIX: add the white frame to photos that were missing it (Highlights, Parcel map, Disclosures photo) ===== */
+.highlight-grid img{
+  border:8px solid rgba(255,255,255,.85)!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.14)!important;
+}
+.parcel-display img{
+  border:10px solid rgba(255,255,255,.85)!important;
+  box-shadow:0 14px 35px rgba(0,0,0,.16)!important;
+}
+.disclosure-layout>img{
+  border:12px solid rgba(255,255,255,.85)!important;
+  box-sizing:border-box!important;
+}
