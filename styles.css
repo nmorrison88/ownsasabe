@@ -506,3 +506,32 @@ html{scroll-behavior:auto!important;}
     gap:20px!important;
   }
 }
+
+/* ===================================================================
+   DECISIVE FINAL PASS — genuinely uniform titles, consistent vertical
+   balance, everything below is the last word and wins outright.
+   =================================================================== */
+
+/* 1. Uniform title size across Snapshot, Vision, Contact — locked, no more drift */
+#snapshot h2, #vision h2, #contact h2{
+  font-size:48px!important;
+  line-height:1.1!important;
+}
+@media(max-width:900px){
+  #snapshot h2, #vision h2, #contact h2{font-size:36px!important;}
+}
+
+/* 2. Snapshot bullet list aligns with the title's left edge (browser's default UL indent was the culprit) */
+.two-list{padding-left:0!important;}
+.two-list li{list-style-position:inside;padding-left:0!important;}
+
+/* 5 & 6. Consistent vertical balance: every split section centers its row the same way,
+   so photos and text sit in the same relative position from page to page */
+.split-snapshot{align-items:center!important;}
+.snapshot-photo{margin-top:0!important;}
+
+/* 4. Vision: tighter spacing so nothing runs off the bottom of the screen */
+#vision .check-grid.one-col{gap:6px!important;}
+#vision .check-grid.one-col li{font-size:14px!important;}
+#vision .fineprint{margin-top:10px!important;font-size:12px!important;}
+#vision h3{margin-bottom:8px!important;font-size:19px!important;}
