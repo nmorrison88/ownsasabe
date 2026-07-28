@@ -417,3 +417,19 @@ html{scroll-behavior:auto!important;}
   border:12px solid rgba(255,255,255,.85)!important;
   box-sizing:border-box!important;
 }
+
+/* ===== FINAL FIX: Highlights photos are the exception — no white frame, cards already have their own look ===== */
+.highlight-grid img{
+  border:none!important;
+  box-shadow:none!important;
+}
+
+/* ===== FINAL FIX: Hill Top Bar photo crops from the bottom, keeping the sign visible at top ===== */
+.highlight-grid article:nth-child(6) img{
+  object-position:top!important;
+}
+
+/* ===== FINAL FIX: Snapshot photo better centered, less dead space before it ===== */
+.split-snapshot{gap:24px!important;}
+.split-snapshot .section.inner{flex:1!important;}
+.snapshot-photo{max-width:500px!important; margin:0 auto!important;}
