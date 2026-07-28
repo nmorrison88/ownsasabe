@@ -457,7 +457,14 @@ html{scroll-behavior:auto!important;}
 /* ===== FINAL FIX: "Important Information" heading aligns with the content below it instead of sitting at the raw section edge ===== */
 #info .section-title.align-left{
   max-width:1240px!important;
+  width:100%!important;
   margin:0 auto 20px!important;
+  text-align:left!important;
+  padding:0!important;
+}
+#info .section-title.align-left h2{
+  text-align:left!important;
+  margin-left:0!important;
 }
 
 /* ===== FINAL FIX: Snapshot photo aligns to the top of the row (matching the heading) instead of
