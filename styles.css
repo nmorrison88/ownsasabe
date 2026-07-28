@@ -494,3 +494,15 @@ html{scroll-behavior:auto!important;}
   padding-top:0!important;
   margin-top:0!important;
 }
+
+/* ===== FINAL FIX: stop the grid from stretching empty leftover space in BETWEEN the text
+   and photo on mobile (from the section's forced min-height:100vh) — pin rows tightly to
+   the top instead, so any leftover space falls after the photo, not before it ===== */
+.split-snapshot{
+  align-content:start!important;
+}
+@media(max-width:900px){
+  .split-snapshot{
+    gap:20px!important;
+  }
+}
