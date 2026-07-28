@@ -529,6 +529,10 @@ html{scroll-behavior:auto!important;}
    so photos and text sit in the same relative position from page to page */
 .split-snapshot{align-items:center!important;}
 .snapshot-photo{margin-top:0!important;}
+@media(max-width:900px){
+  .split-snapshot{align-items:start!important;}
+  .snapshot-photo{margin-top:16px!important;}
+}
 
 /* 4. Vision: tighter spacing so nothing runs off the bottom of the screen */
 #vision .check-grid.one-col{gap:6px!important;}
