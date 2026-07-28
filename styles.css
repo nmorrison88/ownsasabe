@@ -433,3 +433,23 @@ html{scroll-behavior:auto!important;}
 .split-snapshot{gap:24px!important;}
 .split-snapshot .section.inner{flex:1!important;}
 .snapshot-photo{max-width:500px!important; margin:0 auto!important;}
+
+/* ===== FINAL FIX: make Snapshot use the exact same grid layout as Vision, instead of its own separate flex system ===== */
+.split-snapshot{
+  max-width:1180px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:58px!important;
+  align-items:center!important;
+  flex-direction:unset!important;
+  padding:70px 28px 30px!important;
+}
+.split-snapshot .section.inner{
+  flex:unset!important;
+  max-width:none!important;
+  margin:0!important;
+}
+@media(max-width:900px){
+  .split-snapshot{grid-template-columns:1fr!important;}
+}
