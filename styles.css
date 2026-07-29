@@ -567,3 +567,10 @@ html{scroll-behavior:auto!important;}
     object-fit:cover!important;
   }
 }
+
+/* ===== FINAL FIX: Contact photo — more rectangular (not square), anchored to the top so the
+   "286" sign is never cropped off, any cropping now happens at the bottom instead ===== */
+.contact-photo{
+  aspect-ratio:3/4!important;
+  object-position:top!important;
+}
