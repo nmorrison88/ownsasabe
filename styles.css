@@ -596,3 +596,7 @@ html{scroll-behavior:auto!important;}
 
 /* ===== FINAL FIX: the mostly-empty grid section no longer forces a near-full-screen gap ===== */
 #articles + section{min-height:auto!important;padding:40px 24px 90px!important;}
+
+/* ===== FINAL FIX: the Articles landing section itself was still forced to a full screen height,
+   leaving dead space below its content (short content, not the grid section) ===== */
+#articles{min-height:auto!important;padding-bottom:50px!important;}
