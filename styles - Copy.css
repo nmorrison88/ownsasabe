@@ -1,0 +1,589 @@
+:root{--cream:#efe3c4;--off:#f8f4eb;--ink:#1b1b1b;--muted:#5b5348;--blue:#38b6ff;--dark:#0c0b09}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Montserrat,Arial,sans-serif;line-height:1.65}img{max-width:100%;display:block}h1,h2,h3,.brand{font-family:'Cormorant Garamond',Georgia,serif}h1{font-size:clamp(76px,15vw,170px);font-weight:400;line-height:.8;margin:0;text-shadow:0 6px 24px #000}h2{font-size:clamp(42px,7vw,82px);line-height:.92;margin:0 0 24px;font-weight:700}h3{font-size:27px;margin:0 0 10px}.site-header{position:fixed;z-index:10;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:rgba(12,11,9,.52);backdrop-filter:blur(10px);color:white}.brand{font-size:32px;color:white;text-decoration:none}.site-nav{display:flex;gap:22px}.site-nav a{color:white;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}.nav-toggle{display:none;background:none;border:0;color:white;font-size:28px}.hero{height:100vh;min-height:650px;position:relative;display:grid;place-items:center;text-align:center;color:white;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-overlay{display:none}.hero-content{position:relative;z-index:1;padding:24px}.hero-subtitle{font-size:clamp(18px,2.2vw,28px);margin:22px auto;max-width:800px}.section{padding:90px 28px}.cream{background:var(--cream)}.offwhite{background:var(--off)}.dark{background:var(--dark);color:white}.inner,.section>*,.footer>*{max-width:1180px;margin-left:auto;margin-right:auto}.section-title{text-align:center;max-width:940px;margin:0 auto 48px}.eyebrow{text-transform:uppercase;letter-spacing:7px;font-size:13px;font-weight:600}.divider{width:300px;height:24px;margin:18px auto 22px;position:relative;background:none}.divider:before,.divider:after{content:'';position:absolute;top:50%;height:1px;background:var(--ink);width:42%;opacity:.88}.divider:before{left:0}.divider:after{right:0}.divider{--ornament:'❦'}.divider::selection{background:transparent}.divider span{display:none}.divider.light:before,.divider.light:after{background:white}.divider.light{color:white}.divider:empty{font-size:0}.divider:empty::marker{display:none}.divider.left{margin-left:0;margin-right:auto}.divider:empty:after{right:0}.divider:empty:before{left:0}.divider:empty{display:flex;align-items:center;justify-content:center}.divider:empty::selection{background:transparent}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 24px;border:1px solid var(--ink);background:var(--ink);color:white;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,.18)}.btn-light{background:white;color:var(--ink);border-color:white}.split{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.reverse{grid-template-columns:1fr 1fr}.framed-image{box-shadow:0 14px 40px rgba(0,0,0,.18)}.spaced{text-transform:uppercase;letter-spacing:8px;margin-top:42px}.cards{max-width:1180px;margin:auto}.highlight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.highlight-grid article,.disclosure-cards article{background:rgba(255,255,255,.65);padding:22px;border:1px solid rgba(0,0,0,.08);box-shadow:0 10px 30px rgba(0,0,0,.05)}.highlight-grid img{width:100%;height:190px;object-fit:cover;margin-bottom:18px}.wide-image{width:100%;height:260px;object-fit:cover}.two-list{max-width:900px;margin:20px auto 0;columns:2;font-size:20px}.two-list li{break-inside:avoid;margin:0 0 18px}.italic{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-style:italic}.check-grid{padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;list-style:none}.check-grid li:before{content:'✓';display:inline-grid;place-items:center;width:22px;height:22px;margin-right:10px;border-radius:50%;background:var(--ink);color:white;font-size:14px}.fineprint{font-size:13px;color:var(--muted)}.center{text-align:center}.tall-image{width:100%;height:650px;object-fit:cover}.video-shell{max-width:1100px;margin:auto;position:relative;border:1px solid rgba(255,255,255,.22);box-shadow:0 22px 60px rgba(0,0,0,.35);cursor:pointer}.video-shell img{width:100%;height:min(62vw,620px);object-fit:cover;filter:brightness(.75)}.play-button{position:absolute;left:50%;top:64%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:50%;border:2px solid white;background:rgba(255,255,255,.18);color:white;font-size:42px;cursor:pointer;backdrop-filter:blur(8px)}.parcel-tabs{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:0 auto 32px}.parcel-tab{font-family:Montserrat,sans-serif;padding:16px 28px;border:1px solid var(--ink);background:transparent;cursor:pointer;text-transform:uppercase;letter-spacing:2px}.parcel-tab span{display:block;font-size:12px;letter-spacing:1px}.parcel-tab.active{background:var(--ink);color:white}.parcel-display{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center}.parcel-display img{border:1px solid rgba(0,0,0,.12);box-shadow:0 14px 35px rgba(0,0,0,.12)}.parcel-info{padding:36px;background:rgba(255,255,255,.7)}.parcel-note{max-width:850px;margin:30px auto 0;text-align:center}.map-frame iframe{width:100%;height:470px;border:0;box-shadow:0 16px 44px rgba(0,0,0,.16)}.clean-list{padding-left:20px}.disclosure-layout{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.4fr .8fr;gap:34px;align-items:stretch}.disclosure-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.disclosure-layout>img{height:100%;min-height:650px;object-fit:cover}.contact .subtitle{font-family:'Cormorant Garamond',Georgia,serif;font-size:34px}.button-stack{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:620px}.footer{padding:54px 24px;background:#111;color:white;text-align:center}.footer img{max-width:300px;margin:auto auto 24px;border-radius:2px;opacity:.92}.tagline{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px}.back-to-top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:white;text-decoration:none}.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@media(max-width:900px){.site-nav{display:none;position:absolute;top:70px;right:16px;left:16px;flex-direction:column;background:rgba(12,11,9,.95);padding:24px}.site-nav.open{display:flex}.nav-toggle{display:block}.split,.parcel-display,.disclosure-layout{grid-template-columns:1fr}.highlight-grid,.disclosure-cards{grid-template-columns:1fr}.two-list{columns:1}.button-stack,.check-grid{grid-template-columns:1fr}.section{padding:64px 18px}.tall-image{height:auto}.wide-image{height:190px}h1{font-size:92px}.hero{min-height:600px}.disclosure-layout>img{min-height:360px}.site-header{padding:14px 18px}}
+
+
+/* Revision 2 refinements */
+.hero{min-height:720px;background:#111}.hero img{filter:none}.hero::after{content:'';position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(transparent,rgba(0,0,0,.08))}.brand{letter-spacing:1.5px}.site-header{background:rgba(12,11,9,.42)}
+.section-title h2,.split h2,.contact h2{font-size:clamp(48px,6vw,88px);font-weight:600;letter-spacing:.04em;text-transform:uppercase;line-height:.95;margin-bottom:0}.section-subtitle{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(22px,2.3vw,32px);font-style:italic;color:#4d3b2d;line-height:1.25;margin:4px auto 0;max-width:760px}.section-subtitle.light-text{color:rgba(255,255,255,.86)}.section-subtitle.align-left{margin-left:0;text-align:left}.eyebrow{letter-spacing:8px;font-size:15px}.section-title{margin-bottom:42px}.section{padding:100px 30px}.cream{background:#efe3c4}.offwhite{background:#fbf7ef}
+.divider{width:330px;height:22px;margin:18px auto 22px;background:none;display:flex;align-items:center;justify-content:center;position:relative}.divider:before{content:'';display:block;width:100%;height:1px;background:linear-gradient(90deg,var(--ink) 0 38%,transparent 38% 62%,var(--ink) 62% 100%);opacity:.9;position:absolute;left:0;top:50%;transform:translateY(-50%)}.divider:after{content:'❦';font-size:22px;line-height:1;background:inherit;color:var(--ink);padding:0 14px;position:relative;z-index:2}.divider.light:before{background:linear-gradient(90deg,white 0 38%,transparent 38% 62%,white 62% 100%)}.divider.light:after{color:white}.divider.left{margin-left:0;margin-right:auto}
+#history .section-title .eyebrow{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(50px,8vw,86px);letter-spacing:.18em;font-weight:600;color:#24211d}.split{gap:66px}.split p{font-size:17px}.framed-image{border:10px solid rgba(255,255,255,.24);box-shadow:0 12px 34px rgba(0,0,0,.16)}.spaced{font-size:18px;letter-spacing:9px;color:#1f1c18}.highlight-grid{gap:30px}.highlight-grid article{background:rgba(255,255,255,.55);box-shadow:none;border:1px solid rgba(80,61,42,.16);padding:0 0 24px;text-align:center}.highlight-grid img{height:215px;margin-bottom:22px}.highlight-grid h3{text-transform:uppercase;letter-spacing:.08em;font-size:21px}.highlight-grid p{padding:0 22px;margin-bottom:0}.wide-image{height:310px}.two-list{font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;line-height:1.5}.two-list li{padding-left:8px}.italic{color:#3d2f24}.check-grid li{font-size:15px}.fineprint{font-size:14px}.parcel-tabs{margin-top:8px}.parcel-tab{background:#fffaf0}.parcel-display img{box-shadow:0 10px 28px rgba(0,0,0,.12)}.parcel-info{border:1px solid rgba(80,61,42,.16)}.disclosure-cards article{box-shadow:none;border:1px solid rgba(80,61,42,.16);background:rgba(255,255,255,.48)}.disclosure-cards h3{text-transform:uppercase;letter-spacing:.08em;font-size:20px}.button-stack .btn{border-radius:0}.footer{background:#1f1209}.footer img{max-width:220px;opacity:.95}.tagline{font-style:italic}
+@media(max-width:900px){.section-title h2,.split h2,.contact h2{font-size:clamp(40px,12vw,58px)}.section-subtitle{font-size:24px}.divider{width:240px}.section{padding:70px 18px}.wide-image{height:210px}.highlight-grid img{height:185px}}
+
+
+.section-title h2,.split h2,.contact h2{font-size:44px!important;line-height:1.15!important;text-transform:none!important;} .section-subtitle{font-size:26px!important;} @media(max-width:900px){.section-title h2,.split h2,.contact h2{font-size:34px!important}.section-subtitle{font-size:22px!important}}
+
+/* Revision 4: title polish and Property Highlights adjustments */
+.section-title h2,.split h2,.contact h2{
+  text-transform:uppercase!important;
+  font-size:44px!important;
+  line-height:1.15!important;
+}
+.section-subtitle{
+  font-size:24px!important;
+  line-height:1.25!important;
+}
+#highlights{
+  background:#efe3c4!important;
+}
+#highlights .divider{
+  display:none!important;
+}
+#highlights .section-subtitle{
+  font-size:22px!important;
+  max-width:720px;
+  margin-top:10px;
+}
+@media(max-width:900px){
+  .section-title h2,.split h2,.contact h2{font-size:34px!important;}
+  .section-subtitle{font-size:22px!important;}
+  #highlights .section-subtitle{font-size:20px!important;}
+}
+
+
+/* Version 1.0 polish */
+:root{
+  --cream:#efe3c4;
+  --off:#efe3c4;
+}
+.offwhite{background:var(--cream)!important;}
+.section-title h2,.split h2,.contact h2{
+  text-transform:uppercase!important;
+  font-size:44px!important;
+  line-height:1.12!important;
+  letter-spacing:.045em!important;
+  font-weight:600!important;
+}
+.section-subtitle{
+  font-size:22px!important;
+  line-height:1.25!important;
+  margin-top:10px!important;
+  max-width:760px!important;
+}
+#history .split h2{
+  font-size:40px!important;
+  line-height:1.12!important;
+}
+#highlights{background:var(--cream)!important;}
+#highlights .divider,
+#vision .divider,
+#video .divider,
+#parcels .divider,
+#location .divider,
+#info .divider,
+#contact .divider{
+  display:none!important;
+}
+.highlight-grid article{
+  padding:0 0 24px!important;
+  overflow:hidden!important;
+  background:rgba(255,255,255,.58)!important;
+}
+.highlight-grid img{
+  width:100%!important;
+  height:230px!important;
+  object-fit:cover!important;
+  margin:0 0 22px 0!important;
+  display:block!important;
+}
+.two-list{
+  font-size:22px!important;
+  line-height:1.42!important;
+  max-width:980px!important;
+}
+.check-grid{
+  gap:12px 22px!important;
+}
+.check-grid li{
+  font-size:14px!important;
+  white-space:nowrap!important;
+}
+.contact-name-block{
+  margin:34px 0 24px!important;
+}
+.contact-name-block h3{
+  margin:0 0 2px 0!important;
+  text-transform:uppercase!important;
+  letter-spacing:.03em!important;
+  font-size:34px!important;
+}
+.contact .subtitle{
+  margin:0!important;
+  line-height:1.05!important;
+  font-size:30px!important;
+}
+.parcel-note{display:none!important;}
+@media(max-width:900px){
+  .section-title h2,.split h2,.contact h2{font-size:34px!important;}
+  #history .split h2{font-size:32px!important;}
+  .section-subtitle{font-size:20px!important;}
+  .two-list{font-size:19px!important;}
+  .check-grid li{white-space:normal!important;font-size:15px!important;}
+  .highlight-grid img{height:210px!important;}
+}
+
+
+/* Version 1.1 final polish */
+#snapshot .divider{display:none!important;}
+
+/* Property highlights: photos only, no baked icon area */
+.highlight-grid article{
+  overflow:hidden!important;
+}
+.highlight-grid img{
+  width:100%!important;
+  height:230px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  margin:0 0 22px 0!important;
+}
+
+/* Vision section: right image becomes a framed square photograph */
+#vision{
+  align-items:center!important;
+}
+#vision .tall-image{
+  width:min(100%,620px)!important;
+  aspect-ratio:1 / 1!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  justify-self:center!important;
+  align-self:center!important;
+  border:14px solid rgba(255,255,255,.65)!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.20)!important;
+  background:#f8f4eb!important;
+}
+
+@media(max-width:900px){
+  #vision .tall-image{width:100%!important;border-width:10px!important;}
+  .highlight-grid img{height:210px!important;}
+}
+
+/* ===== Hamburger menu (matches Real Estate with Nate AZ) ===== */
+.hamburger-btn{position:fixed;top:16px;right:16px;z-index:300;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border:none;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.hamburger-btn .bar{position:relative;width:22px;height:2px;background:#1b1b1b;}
+.hamburger-btn .bar::before,.hamburger-btn .bar::after{content:"";position:absolute;left:0;width:22px;height:2px;background:#1b1b1b;}
+.hamburger-btn .bar::before{top:-7px;}
+.hamburger-btn .bar::after{top:7px;}
+.nav-checkbox{display:none;}
+.nav-overlay{position:fixed;inset:0;z-index:250;background:rgba(12,11,9,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease;overflow-y:auto;padding:80px 24px 40px;}
+.nav-checkbox:checked ~ .nav-overlay{opacity:1;pointer-events:auto;transform:translateY(0);}
+.nav-overlay a{color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;text-decoration:none;opacity:.85;letter-spacing:.03em;}
+.nav-overlay a:hover{opacity:1;color:#efe3c4;}
+.nav-overlay .brand-tag{position:absolute;top:22px;left:24px;color:#fff;opacity:.6;font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-family:Montserrat,sans-serif;}
+label.hamburger-btn{display:flex;}
+
+/* ===== Full-height sections, no scroll needed within a section ===== */
+.section,.hero,.snapshot,.video-section,.parcels-section,.disclosures,.contact{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.section{padding:70px 28px 30px;}
+h1{font-size:clamp(56px,11vw,140px);}
+h2{font-size:clamp(34px,5.5vw,64px);margin-bottom:16px;}
+.section-title{margin-bottom:26px;}
+.hero-subtitle{margin:14px auto;}
+.split{gap:36px;}
+.split p{font-size:15px;margin:0 0 10px;}
+.framed-image{max-height:46vh;object-fit:cover;width:100%;}
+.spaced{margin-top:20px;font-size:14px;letter-spacing:6px;}
+.highlight-grid{gap:16px;}
+.highlight-grid img{height:110px;margin-bottom:10px;}
+.highlight-grid article{padding:0 0 12px;}
+.highlight-grid h3{font-size:16px;margin-bottom:4px;}
+.highlight-grid p{font-size:13px;padding:0 12px;}
+.wide-image{height:130px;}
+.two-list{font-size:16px;margin-top:10px;}
+.two-list li{margin-bottom:8px;}
+.italic{font-size:20px;}
+.check-grid{gap:6px 18px;}
+.check-grid li{font-size:13px;}
+.fineprint{font-size:11px;}
+.tall-image{height:38vh;}
+.video-shell img{height:min(40vw,340px);}
+.play-button{width:80px;height:80px;font-size:30px;}
+.parcel-tabs{margin-bottom:14px;}
+.parcel-tab{padding:10px 18px;font-size:13px;}
+.parcel-display img{max-height:38vh;object-fit:cover;}
+.parcel-info{padding:18px;}
+.map-frame iframe{height:32vh;}
+.disclosure-cards{gap:8px;}
+.disclosure-cards article{padding:10px;}
+.disclosure-cards h3{font-size:14px;}
+.disclosure-cards p{font-size:12px;}
+.disclosure-layout>img{min-height:0;height:100%;max-height:70vh;}
+.button-stack{gap:8px;}
+.footer{padding:30px 24px;}
+.footer img{max-width:180px;margin-bottom:12px;}
+
+@media(max-width:900px){
+  .nav-overlay a{font-size:1.3rem;}
+}
+
+/* ===== Snapshot split layout ===== */
+.split-snapshot{display:flex;flex-direction:row;align-items:center;gap:40px;padding:70px 28px 30px;}
+.split-snapshot .section.inner{flex:1.1;max-width:none;margin:0;}
+.split-snapshot .snapshot-photo{flex:0.9;max-width:420px;max-height:60vh;width:100%;object-fit:cover;border:10px solid rgba(255,255,255,.5);box-shadow:0 14px 40px rgba(0,0,0,.18);}
+.section-title.align-left{text-align:left;margin:0 0 20px;max-width:none;}
+.section-subtitle.align-left{margin-left:0;text-align:left;}
+@media(max-width:900px){
+  .split-snapshot{flex-direction:column;}
+  .split-snapshot .snapshot-photo{max-width:100%;}
+}
+
+/* ===== Tighten gap above section headings (move content up) ===== */
+.section{justify-content:flex-start;padding-top:56px;}
+.section-title{margin-top:0;}
+.split{justify-content:flex-start;}
+.split-snapshot{justify-content:flex-start;}
+.snapshot,.video-section,.parcels-section,.disclosures,.contact{justify-content:flex-start;padding-top:56px;}
+
+/* ===== Contact photo sizing so nothing gets cut off ===== */
+.contact-photo{max-height:44vh;object-fit:cover;}
+
+/* ===== Snapshot single-column bullet list ===== */
+.two-list.one-col{columns:1;font-size:19px;}
+.two-list.one-col li{margin-bottom:12px;}
+
+/* ===== Single-column variant for Vision checklist ===== */
+.check-grid.one-col{columns:1;max-width:520px;}
+.check-grid.one-col li{margin-bottom:10px;}
+
+/* ===== Contact icon list ===== */
+.contact-icon-list{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.contact-icon-list li{display:flex;align-items:center;gap:12px;font-size:18px;}
+.contact-icon-list .icon{font-size:20px;width:26px;text-align:center;flex-shrink:0;}
+.contact-icon-list a{color:inherit;text-decoration:underline;text-underline-offset:4px;}
+.contact-icon-list a:hover{color:#8a6b3f;}
+
+/* ===== Uniform typography across all sections ===== */
+h2{font-size:clamp(40px,5.5vw,64px)!important;font-weight:600;letter-spacing:.03em;text-transform:uppercase;line-height:1.05;margin:0 0 8px;}
+.section-subtitle,.italic{font-size:19px!important;font-style:italic;font-family:'Cormorant Garamond',Georgia,serif;opacity:.85;margin:0 0 18px;}
+.split p:not(.fineprint):not(.italic):not(.subtitle),
+.split-snapshot p:not(.fineprint):not(.italic):not(.subtitle),
+.disclosure-cards p{
+  font-size:16px!important;line-height:1.55;
+}
+.two-list li,.check-grid li{font-size:18px!important;}
+h3{font-size:22px;letter-spacing:.02em;}
+
+/* ===== FINAL Highlights sizing fix (overrides earlier conflicting rules) ===== */
+.highlight-grid img{height:120px!important;margin-bottom:8px!important;}
+.highlight-grid{gap:14px!important;}
+.highlight-grid article{padding:0 0 10px!important;}
+.highlight-grid h3{font-size:15px!important;margin-bottom:3px!important;}
+.highlight-grid p{font-size:12px!important;padding:0 10px!important;}
+#highlights .section-title{margin-bottom:12px!important;}
+#highlights .section-title p.section-subtitle{margin-bottom:0!important;}
+
+/* ===== FINAL FIX: restore grid display for split sections (was being overridden by the full-height flex rule) ===== */
+.split{display:grid!important;}
+.split-snapshot{display:flex!important;}
+
+/* ===== Fix: text overflowing its grid column and disappearing behind the photo ===== */
+.split > div{min-width:0;}
+.check-grid{grid-template-columns:1fr 1fr;}
+.check-grid li{min-width:0;overflow-wrap:break-word;}
+
+/* ===== FINAL FIX: Vision checklist actually single-column (grid property, not multicol) ===== */
+.check-grid.one-col{grid-template-columns:1fr!important;columns:auto;max-width:520px;}
+
+/* ===== FINAL FIX: Contact photo shows in full, matching its real portrait shape ===== */
+.contact-photo{
+  height:auto!important;
+  max-height:62vh;
+  width:auto;
+  max-width:100%;
+  margin:0 auto;
+  object-fit:contain!important;
+}
+
+/* ===================================================================
+   FINAL CONSISTENCY PASS — one photo treatment, one spacing system,
+   this is the authoritative last word for all rules below.
+   =================================================================== */
+
+/* Every split-section photo: same shape, same size, fills its frame completely, no blank space */
+.snapshot-photo,
+.contact-photo,
+#vision .tall-image{
+  aspect-ratio:1/1!important;
+  width:100%!important;
+  max-width:480px!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  border:12px solid rgba(255,255,255,.6)!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.20)!important;
+  background:none!important;
+  margin:0 auto!important;
+}
+
+/* Consistent, real spacing between every title and its subtitle, sitewide */
+h2{margin:0 0 16px!important;}
+.section-subtitle,.italic{margin:0 0 20px!important;}
+.contact h2{font-size:clamp(40px,5.5vw,64px)!important;text-transform:uppercase!important;}
+
+/* Indie logo — mobile only, never shown on desktop/laptop */
+.mobile-logo{display:none;}
+@media(max-width:900px){
+  .mobile-logo{
+    display:block;
+    width:130px;
+    height:auto;
+    margin:0 auto 14px;
+  }
+}
+
+/* Hero logo overlay — mobile only, positioned top-right, never shown on desktop */
+.hero-logo-mobile{display:none;}
+@media(max-width:900px){
+  .hero-logo-mobile{
+    display:block!important;
+    position:absolute!important;
+    top:16px!important;
+    right:80px!important;
+    width:90px!important;
+    height:auto!important;
+    z-index:5!important;
+  }
+}
+
+/* ===== FINAL FIX: show the entire hero photo (logo + all text), no cropping, no cream box ===== */
+.hero{background:var(--cream)!important;}
+.hero img{
+  object-fit:contain!important;
+  background:var(--cream)!important;
+}
+
+/* Since the full hero image (including its logo) now always shows in full, the separate logo overlay is redundant — hide it */
+.hero-logo-mobile{display:none!important;}
+
+/* ===== FINAL FIX: video fills its section properly, black background around it, no longer capped tiny ===== */
+.video-shell img{
+  height:min(60vh,620px)!important;
+  width:100%!important;
+  object-fit:cover!important;
+}
+.video-section{background:#000!important;}
+
+/* ===== FINAL FIX: Snapshot bullet list left-aligned under the title (was auto-centered, leaving blank space on the left) ===== */
+.two-list{margin:20px 0 0!important;}
+
+/* ===== FINAL FIX: Snapshot photo larger ===== */
+.snapshot-photo{max-width:560px!important;}
+
+/* ===== FINAL FIX: Vision checklist smaller and tighter, so long items are less likely to wrap ===== */
+.check-grid.one-col li{font-size:15px!important;}
+.check-grid.one-col{gap:8px!important;}
+#vision .tall-image{max-width:520px!important;}
+
+/* ===== FINAL FIX: remove the redundant parcel info box (already shown on the tab buttons), let the map take the full width ===== */
+.parcel-info{display:none!important;}
+.parcel-display{grid-template-columns:1fr!important;}
+.parcel-display img{
+  max-height:65vh!important;
+  width:100%!important;
+  max-width:1100px!important;
+  margin:0 auto!important;
+}
+
+/* ===== FINAL FIX: larger Google Maps embed on desktop ===== */
+@media(min-width:901px){
+  .map-frame iframe{height:640px!important;}
+  .map-frame{max-width:900px!important;}
+}
+
+/* ===== FINAL FIX: scroll-jump bug — global smooth-scroll was conflicting with the reveal
+   animations and causing the page to jerk/jump unexpectedly during normal scrolling.
+   Turn off global smooth-scroll; menu navigation gets its own smooth scroll via JS instead. ===== */
+html{scroll-behavior:auto!important;}
+
+/* ===== FINAL FIX: add the white frame to photos that were missing it (Highlights, Parcel map, Disclosures photo) ===== */
+.highlight-grid img{
+  border:8px solid rgba(255,255,255,.85)!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.14)!important;
+}
+.parcel-display img{
+  border:10px solid rgba(255,255,255,.85)!important;
+  box-shadow:0 14px 35px rgba(0,0,0,.16)!important;
+}
+.disclosure-layout>img{
+  border:12px solid rgba(255,255,255,.85)!important;
+  box-sizing:border-box!important;
+}
+
+/* ===== FINAL FIX: Highlights photos are the exception — no white frame, cards already have their own look ===== */
+.highlight-grid img{
+  border:none!important;
+  box-shadow:none!important;
+}
+
+/* ===== FINAL FIX: Hill Top Bar photo crops from the bottom, keeping the sign visible at top ===== */
+.highlight-grid article:nth-child(6) img{
+  object-position:top!important;
+}
+
+/* ===== FINAL FIX: Snapshot photo better centered, less dead space before it ===== */
+.split-snapshot{gap:24px!important;}
+.split-snapshot .section.inner{flex:1!important;}
+.snapshot-photo{max-width:500px!important; margin:0 auto!important;}
+
+/* ===== FINAL FIX: make Snapshot use the exact same grid layout as Vision, instead of its own separate flex system ===== */
+.split-snapshot{
+  max-width:1180px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:58px!important;
+  align-items:center!important;
+  flex-direction:unset!important;
+  padding:70px 28px 30px!important;
+}
+.split-snapshot .section.inner{
+  flex:unset!important;
+  max-width:none!important;
+  margin:0!important;
+}
+@media(max-width:900px){
+  .split-snapshot{grid-template-columns:1fr!important;}
+}
+
+/* ===== FINAL FIX: "Important Information" heading aligns with the content below it instead of sitting at the raw section edge ===== */
+#info .section-title.align-left{
+  max-width:1240px!important;
+  width:100%!important;
+  margin:0 auto 20px!important;
+  text-align:left!important;
+  padding:0!important;
+}
+#info .section-title.align-left h2{
+  text-align:left!important;
+  margin-left:0!important;
+}
+
+/* ===== FINAL FIX: Snapshot photo aligns to the top of the row (matching the heading) instead of
+   vertically centering within a row made tall by the long bullet list, which was making it appear
+   to "jump" down below where it should sit ===== */
+.split-snapshot{
+  align-items:start!important;
+}
+.snapshot-photo{
+  margin-top:8px!important;
+}
+
+/* ===== FINAL FIX: Snapshot mobile stacking — .split-snapshot never got the single-column
+   mobile treatment that .split (Vision/Contact) automatically gets, so it was still trying
+   to force 2 columns on phone screens, squeezing everything and pushing the heading down ===== */
+@media(max-width:900px){
+  .split-snapshot{
+    grid-template-columns:1fr!important;
+    padding:64px 18px 30px!important;
+  }
+  .snapshot-photo{margin-top:20px!important;}
+}
+
+/* ===== FINAL FIX: Snapshot text block raised to align with the top of the photo on desktop ===== */
+.split-snapshot .section.inner{
+  align-self:start!important;
+  padding-top:0!important;
+  margin-top:0!important;
+}
+
+/* ===== FINAL FIX: stop the grid from stretching empty leftover space in BETWEEN the text
+   and photo on mobile (from the section's forced min-height:100vh) — pin rows tightly to
+   the top instead, so any leftover space falls after the photo, not before it ===== */
+.split-snapshot{
+  align-content:start!important;
+}
+@media(max-width:900px){
+  .split-snapshot{
+    gap:20px!important;
+  }
+}
+
+/* ===================================================================
+   DECISIVE FINAL PASS — genuinely uniform titles, consistent vertical
+   balance, everything below is the last word and wins outright.
+   =================================================================== */
+
+/* 1. Uniform title size across Snapshot, Vision, Contact — locked, no more drift */
+#snapshot h2, #vision h2, #contact h2{
+  font-size:48px!important;
+  line-height:1.1!important;
+}
+@media(max-width:900px){
+  #snapshot h2, #vision h2, #contact h2{font-size:36px!important;}
+}
+
+/* 2. Snapshot bullet list aligns with the title's left edge (browser's default UL indent was the culprit) */
+.two-list{padding-left:0!important;}
+.two-list li{list-style-position:inside;padding-left:0!important;}
+
+/* 5 & 6. Consistent vertical balance: every split section centers its row the same way,
+   so photos and text sit in the same relative position from page to page */
+.split-snapshot{align-items:center!important;}
+.snapshot-photo{margin-top:0!important;}
+@media(max-width:900px){
+  .split-snapshot{align-items:start!important;}
+  .snapshot-photo{margin-top:16px!important;}
+}
+
+/* 4. Vision: tighter spacing so nothing runs off the bottom of the screen */
+#vision .check-grid.one-col{gap:6px!important;}
+#vision .check-grid.one-col li{font-size:14px!important;}
+#vision .fineprint{margin-top:10px!important;font-size:12px!important;}
+#vision h3{margin-bottom:8px!important;font-size:19px!important;}
+
+/* ===== FINAL FIX: the remaining small gap on mobile was the desktop 58px grid gap still applying
+   as row-gap between the stacked text and photo — never scoped out for mobile ===== */
+@media(max-width:900px){
+  .split-snapshot{gap:14px!important;}
+}
+
+/* ===== FINAL FIX: soften the fade-in entrance animation on Snapshot's text block so it doesn't
+   read as a visible "jump" while scrolling — smaller shift, faster settle ===== */
+#snapshot .reveal{
+  transform:translateY(6px)!important;
+  transition:opacity .35s ease, transform .35s ease!important;
+}
+
+/* ===== FINAL FIX: dedicated portrait hero image for mobile, desktop keeps its own ===== */
+.hero-mobile-img{display:none;}
+.hero-desktop-img{display:block;}
+@media(max-width:900px){
+  .hero-desktop-img{display:none!important;}
+  .hero-mobile-img{
+    display:block!important;
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+  }
+}
+
+/* ===== FINAL FIX: Contact photo — more rectangular (not square), anchored to the top so the
+   "286" sign is never cropped off, any cropping now happens at the bottom instead ===== */
+.contact-photo{
+  aspect-ratio:3/4!important;
+  object-position:top!important;
+}
+
+/* ===== Articles section ===== */
+.articles-grid{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:18px;
+}
+.article-card{text-decoration:none;color:inherit;display:block;}
+.article-card img{width:100%;height:120px;object-fit:cover;border:6px solid rgba(255,255,255,.7);box-shadow:0 8px 20px rgba(0,0,0,.14);}
+.article-card .article-card-title{font-size:13px;margin-top:8px;line-height:1.4;font-weight:600;}
+.article-card .article-card-date{font-size:11px;color:var(--muted);margin-top:2px;}
+@media(max-width:900px){
+  .articles-grid{grid-template-columns:repeat(2,1fr);}
+}

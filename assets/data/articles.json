@@ -1,0 +1,9 @@
+[
+  {
+    "date": "2026-01-01",
+    "title": "Article Title Goes Here",
+    "blurb": "A short one or two sentence teaser about this article goes here.",
+    "file": "article-template.html",
+    "image": "assets/images/highlight-acres-new.jpg"
+  }
+]
