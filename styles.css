@@ -574,3 +574,25 @@ html{scroll-behavior:auto!important;}
   aspect-ratio:3/4!important;
   object-position:top!important;
 }
+
+/* ===== Articles section ===== */
+.articles-grid{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:18px;
+}
+.article-card{text-decoration:none;color:inherit;display:block;}
+.article-card img{width:100%;height:120px;object-fit:cover;border:6px solid rgba(255,255,255,.7);box-shadow:0 8px 20px rgba(0,0,0,.14);}
+.article-card .article-card-title{font-size:13px;margin-top:8px;line-height:1.4;font-weight:600;}
+.article-card .article-card-date{font-size:11px;color:var(--muted);margin-top:2px;}
+@media(max-width:900px){
+  .articles-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ===== FINAL FIX: Articles section — move content up, more breathing room ===== */
+#articles{align-items:start!important;padding-top:100px!important;}
+#articles h2{margin-bottom:18px!important;}
+#articles p{margin-bottom:26px!important;}
+#articles h3{font-size:22px!important;}
+
+/* ===== FINAL FIX: the mostly-empty grid section no longer forces a near-full-screen gap ===== */
+#articles + section{min-height:auto!important;padding:40px 24px 90px!important;}
