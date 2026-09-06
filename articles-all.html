@@ -1,26 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>All Articles | Own Sasabe</title>
-  <meta name="description" content="Stories, guides, and local insight connected to Sasabe, land, history, and rural Arizona living." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .archive-wrap{max-width:1180px;margin:0 auto;padding:120px 24px 100px;}
-    .archive-wrap h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(38px,6vw,58px);margin:0 0 12px;}
-    .archive-wrap .archive-sub{margin:0 0 44px;color:var(--muted);}
-    .archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-    .archive-grid .article-card img{height:170px;}
-    .archive-grid .article-card .article-card-title{font-size:16px;}
-    @media(max-width:900px){.archive-grid{grid-template-columns:1fr 1fr;}}
-    @media(max-width:600px){.archive-grid{grid-template-columns:1fr;}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Articles | Own Sasabe</title>
+<meta name="description" content="Stories, guides, and local insight connected to Sasabe, land, history, and rural Arizona living." />
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="cream">
+<body>
   <input type="checkbox" id="nav-toggle" class="nav-checkbox">
   <label class="hamburger-btn" for="nav-toggle"><span class="bar"></span></label>
   <div class="nav-overlay">
@@ -38,27 +25,29 @@
     <a href="index.html#contact">Contact</a>
   </div>
 
-  <main class="archive-wrap">
-    <h1>All Articles</h1>
-    <p class="archive-sub">Stories, guides, and local insight connected to Sasabe, land, history, and rural Arizona living.</p>
-    <div id="archiveGrid" class="archive-grid"></div>
+  <main>
+    <section class="section cream" style="min-height:auto;padding-bottom:60px;">
+      <div class="section-title align-left">
+        <h2>All Articles</h2>
+        <p class="section-subtitle align-left">Stories, guides, and local insight connected to Sasabe, land, history, and rural Arizona living.</p>
+      </div>
+      <div class="articles-grid">
+        <a class="article-card" href="#">
+          <img src="assets/images/highlight-acres-new.jpg" alt="No article yet" width="2172" height="724" />
+          <div class="article-card-title">No article yet</div>
+        </a>
+      </div>
+      <p class="fineprint center" style="margin-top:30px;"><a href="index.html#articles" style="color:inherit;">&larr; Back to Home</a></p>
+    </section>
   </main>
 
-  <script>
-    fetch('assets/data/articles.json')
-      .then(r => r.json())
-      .then(articles => {
-        articles.sort((a,b) => new Date(b.date) - new Date(a.date));
-        const grid = document.getElementById('archiveGrid');
-        grid.innerHTML = articles.map(a => `
-          <a class="article-card" href="${a.file}">
-            <img src="${a.image}" alt="${a.title}" />
-            <div class="article-card-title">${a.title}</div>
-            <div class="article-card-date">${a.date}</div>
-          </a>
-        `).join('');
-      })
-      .catch(() => {});
-  </script>
+  <footer class="footer">
+    <p>Nathan Morrison · Realtor, Indie Realty</p>
+    <p>520.461.0058 · nate@indie-realty.com</p>
+    <p class="tagline">Where history meets opportunity.</p>
+    <p class="fineprint">© 2026 Nathan Morrison | Indie Realty · Equal Housing Opportunity</p>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
 </body>
 </html>
